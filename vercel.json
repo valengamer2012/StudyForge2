@@ -1,0 +1,27 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "installCommand": "npm install",
+  "framework": "vite",
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/$1"
+    },
+    {
+      "source": "/((?!api/).*)",
+      "destination": "/index.html"
+    }
+  ],
+  "env": {
+    "NEXT_PUBLIC_SUPABASE_URL": "https://rczxjllmtsvsrbjgkeyv.supabase.co",
+    "NEXT_PUBLIC_SUPABASE_ANON_KEY": "sb_publishable_DIexO7BRH4Ie6kpR29yuqg_z5FtdLX3",
+    "SUPABASE_SERVICE_ROLE_KEY": "sb_secret_RLR6_tsB4nZKz-cxwh30JA_FYMiAKV0",
+    "VITE_SUPABASE_URL": "https://rczxjllmtsvsrbjgkeyv.supabase.co",
+    "VITE_SUPABASE_ANON_KEY": "sb_publishable_DIexO7BRH4Ie6kpR29yuqg_z5FtdLX3",
+    "VITE_GOOGLE_CLIENT_ID": "1065078894672-rmp5kp8vfjns5rn9kp5psfp16g691043.apps.googleusercontent.com",
+    "VITE_GOOGLE_AUTH_PROXY": "https://designarena.ai/auth/google/callback",
+    "FULLSTACK_PROJECT_REF": "rczxjllmtsvsrbjgkeyv",
+    "FULLSTACK_RESTORE_API_URL": "https://designarena.ai/api/fullstack-restore"
+  }
+}
